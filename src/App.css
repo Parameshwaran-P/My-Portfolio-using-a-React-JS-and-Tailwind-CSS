@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+header a{
+  color: white;
+}
+header ul li{
+  @apply px-3
+}
+
+.bg-color{
+ background: #17252A;
+}
+.bg-color-hero{
+  background: #FFA586;
+ }
+
+.mobile-nav{
+  @apply fixed top-14 left-0 font-semibold bg-green-200 w-full h-1/4;
+}
+
+.mobile-nav li{
+  @apply w-full text-center border-b-2 h-full
+}
