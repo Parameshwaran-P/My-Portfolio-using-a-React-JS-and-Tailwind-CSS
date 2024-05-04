@@ -13,13 +13,53 @@ header ul li{
  background: #17252A;
 }
 .bg-color-hero{
-  background: #FFA586;
+  /* margin-top: 60px; */
+  height: 100%;
+  background:#B5C99A;
  }
 
 .mobile-nav{
-  @apply fixed top-14 left-0 font-semibold bg-green-200 w-full h-1/4;
+  @apply fixed top-10 left-0 font-semibold bg-green-200 w-full h-1/4;
 }
 
 .mobile-nav li{
   @apply w-full text-center border-b-2 h-full
 }
+
+.hero-img{
+  margin-top: 60px;
+  position: relative;
+  top: 20px;
+  left: 50px;
+  padding: 10px;
+}
+
+.about-bg-color{
+  background-color: #87986A;
+}
+
+.project-bg-color{
+  background-color: #718355;
+}
+
+.project-desc{
+ @apply absolute top-5 bottom-[20px] left-0 right-0 project-bg-color text-center opacity-0 duration-500 hover:opacity-100
+}
+
+.what-img{
+  position: absolute;
+  right: 180px;
+}
+.nav-scroll{
+ 
+  position: fixed;
+  transition-timing-function: ease-in;
+  transition: 0.5s;
+  top: -75px;
+}
+
+.nav__blue {
+  position: fixed;
+  top: 0px;
+}
+
