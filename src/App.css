@@ -63,3 +63,10 @@ header ul li{
   top: 0px;
 }
 
+.footer-bg-color{
+  background-color: #E9F5DB;
+}
+html{
+  scroll-behavior: smooth;
+}
+

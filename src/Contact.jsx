@@ -3,12 +3,12 @@ import Contactimg from './assets/Images/con-3.jpg'
 import { AiOutlineGithub, AiOutlineLinkedin, AiOutlineMail, AiOutlinePhone } from "react-icons/ai"; 
 function Contact() {
   return (
-    <section className=' bg-primary about-bg-color px-5 p-5'>
+    <section className=' bg-primary about-bg-color px-5 p-5' id='contact'>
     <div className='md:w-full flex justify-center px-5'>
         <h1 className='text-4xl text-white md:text-center font-bold border-b-4 mb-12 w-[200px]'>Contact Us</h1>
     </div>
-    <div className='md:flex flex'>
-    <div className='md:w-1/2 md:flex  justify-center'>
+    <div className=' md:flex'>
+    <div className='md:w-1/2 md:flex flex-col justify-center'>
      <div className='project-bg-color md:h-[600px] md:w-[1000px] hover:border-2 border-white'>
      <div className='md:flex'>
      <div className='flex-col md:flex'>

@@ -11,7 +11,7 @@ function Resume() {
         document.body.removeChild(link);
   }
   return (
-    <section className=' flex flex-col md:flex-row bg-primary bg-color-hero px-5 p-5'>
+    <section className=' flex flex-col md:flex-row bg-primary bg-color-hero px-5 p-5' id='resume'>
     <div className='py-5 md:w-1/2 flex justify-end'>
         <img className='w-[500px] shadow-2xl shadow-black hover:border-2 border-white' src={Resumeimg} alt="resume-img" />
     </div>

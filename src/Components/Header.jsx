@@ -7,22 +7,7 @@ import { Bars3Icon } from '@heroicons/react/24/solid'
 function Header() {
 
   const [toggle, setToggle] = useState(false)
-  const [show, setShow] = useState(false)
-  const Scroll =()=>{
-   
-    if(window.scrollY>20){
-      setShow(true);
-    }
-    else{
-      setShow(false);
-    }
-  }
-  useEffect(()=>{
-    window.addEventListener('scroll', Scroll)
-    return()=>{
-      window.removeEventListener('scroll', Scroll)
-    }
-  }, []);
+
   return (
    
     <header className="flex justify-between px-6 py-4 bg-color">
@@ -35,24 +20,24 @@ function Header() {
         
         <nav className='hidden md:block'>
         <ul className='flex text-white '>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About me</a></li>
-            <li><a href="#">What I am do?</a></li>
-            <li><a href="#">Resume</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#what-i-do">What I am do?</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
 
         </ul>
         </nav>
        { toggle && <nav className='block md:hidden'>
         
-        <ul className='flex flex-col text-white  mobile-nav'>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About me</a></li>
-            <li><a href="#">What I am do?</a></li>
-            <li><a href="#">Resume</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
+        <ul onClick={()=>{setToggle(!toggle)}} className='flex flex-col text-white  mobile-nav'>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#what-i-do">What I am do?</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
 
         </ul>
         

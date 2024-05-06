@@ -6,8 +6,12 @@ import {  AiFillMail, AiFillTwitterCircle, AiOutlineBlock, AiOutlineGithub, AiOu
 import { FaXTwitter, FaYoutube } from "react-icons/fa6";
 
 function Hero() {
+  const config ={
+    name: 'PARAMESHWARAN P',
+    specialization: 'MERN Full-stack Developer'
+  }
   return (
-    <section className='flex flex-col md:flex-row px-10 py-28 bg-color-hero justify-center h-full'>
+    <section className='flex flex-col md:flex-row px-10 py-28 bg-color-hero justify-center h-full'id='home'>
         {/* <img className='h-40  w-40 rounded-full hero-img ' src={myImg} alt="myImg" /> */}
         <div className='md:w-1/2  md:text-5xl flex-col'>
           <div className='py-0'>
@@ -16,9 +20,9 @@ function Hero() {
         <div className=''>
           
         <h1 className=' text-primary  pl-10 md:pl-20 mt-10 justify-center md:pt-32 font-hero'>
-        <TypeAnimation className='' sequence={[` Hi, I'm PARAMESHWARAN P,`,1000,
+        <TypeAnimation className='' sequence={[` Hi, I'm ${config.name},`,1000,
         
-        `I'm a MERN Full-stack Developer.`,1000,
+        `I'm a ${config.specialization}.`,1000,
           "",]}
           speed={50}
           repeat={Infinity}
