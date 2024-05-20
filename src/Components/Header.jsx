@@ -10,7 +10,7 @@ function Header() {
 
   return (
    
-    <header className="flex justify-between px-6 py-4 bg-color">
+    <header className="flex justify-between px-6 py-4 bg-color fixed top-0 right-0 left-0">
        <div >
 <img className='rounded-full' src={Icon} alt="" /> 
        </div>
@@ -31,7 +31,7 @@ function Header() {
         </nav>
        { toggle && <nav className='block md:hidden'>
         
-        <ul onClick={()=>{setToggle(!toggle)}} className='flex flex-col text-white  mobile-nav'>
+        <ul onClick={()=>{setToggle(!toggle)}} className='flex flex-col text-white  mobile-nav fixed top-0 left-0'>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About me</a></li>
             <li><a href="#what-i-do">What I am do?</a></li>

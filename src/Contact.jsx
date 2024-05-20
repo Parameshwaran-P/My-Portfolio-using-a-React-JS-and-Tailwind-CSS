@@ -13,7 +13,7 @@ function Contact() {
      <div className='md:flex'>
      <div className='flex-col md:flex'>
      <div className='p-5 pl-10'>
-      <h1 className='text-white '>SENT US MESSAGE</h1>
+      <h1 className='text-white'>SENT US MESSAGE</h1>
       </div>
       <div className='px-10'><input className='md:w-[300px] h-[40px] ' type="text" placeholder='Name'/></div> 
      <div className='p-10'>
