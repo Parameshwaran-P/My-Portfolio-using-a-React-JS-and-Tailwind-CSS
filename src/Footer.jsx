@@ -14,6 +14,7 @@ function Footer() {
          <div className='flex justify-center'>
           <p className='pl-10'>&copy;parameshwaran2024</p>
           </div>
+          
     </footer>
   )
 }
